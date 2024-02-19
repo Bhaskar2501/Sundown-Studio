@@ -48,20 +48,39 @@ function menuAnimation() {
     })
 }
 
-// console.log("before loading")
+console.log("before loading")
 
 function loaderAnimation() {
     var loader = document.querySelector("#loader")
     setTimeout(function () {
         loader.style.top = "-100%"
+
         // loader.style.backgroundColor = "blue"
         // console.log("after loading")
     }, 4200)
 }
 
+// function timeLine() {
+//     var tl = gsap.timeline();
+
+// tl.to("#loader", {
+//     height: "-100%",
+//     duration: 2,
+//     ease: Expo.easeInOut
+// }, 4200)
+// }
+
+// tl.to("#elem", {
+//     height: "100%",
+//     duration: 2,
+//     delay: -2,
+//     ease: Expo.easeInOut
+// })
+// }
 
 
 swiperAnimation()
 page4Animation()
 menuAnimation()
+// timeline()
 loaderAnimation()
